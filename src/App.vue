@@ -9,24 +9,38 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-#nav {
-  padding: 30px;
+  body {
+    background-color: #EEEEEE;
+    font-family: 'Lakki Reddy', cursive;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+  }
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  body, html {
+    margin: 0;
+    height: 100%;
+  }
 
-    &.router-link-exact-active {
-      color: #42b983;
+  #app {
+    width: 50%;
+  }
+
+  #nav {
+    padding: 30px;
+    text-align: center;
+
+    a {
+      font-weight: bold;
+      color: #2c3e50;
+
+      &.router-link-exact-active {
+        color: #42b983;
+      }
     }
   }
-}
 </style>
